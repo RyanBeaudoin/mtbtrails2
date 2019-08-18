@@ -1,0 +1,138 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background: url(../bg.jpg) no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: -webkit-fill-available;
+}
+
+.navbar>.container, .navbar>.container-fluid {  
+  background-image: linear-gradient(to right, #f8b88e , #c4817a) !important;
+}
+.navbar-brand span {   
+  color: #51735a;
+  font-size: 40px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+}
+
+.navbar input[type="text"]{  
+  border: 1px solid #51735a !important;
+  margin-right: 15px;
+}
+.navbar input[type="text"]::placeholder  {  
+  color: #000;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+  color: #fed136;
+}
+
+.navbar-expand-md .navbar-nav .dropdown-menu {
+  border-top: 3px solid #fed136;
+}
+
+.form-bg {
+  /* color: #51735a; */
+  color: #fff !important;
+  width: -webkit-fill-available;
+}
+
+input[type="text"] {
+  padding: 5px;
+  background: transparent;
+  border: 1px solid white;
+  color: #fff;
+}
+
+input[type="text"]::placeholder {
+  color: #fff;
+}
+
+.btn {
+  background-color: #51735a !important;
+  border-radius: 30% !important;
+  color: #fff !important;
+  padding: 5px;
+}
+
+.btn:hover {
+  cursor: pointer;
+}
+
+.results {
+  color: #000 !important;
+}
+
+.results li {
+  list-style: none;
+  padding: 50px 22px;
+  border-bottom: 1px dashed;
+}
+
+
+@media only screen and (max-width: 600px) {
+  .form-bg {
+    padding-top: 120px;
+  }
+
+  .navbar-nav {
+    background-color: #000;
+    border-top: 3px solid #fed136;
+    color: #fff;
+    z-index: 1;
+    margin-top: 5px;
+  }
+
+  .navbar-nav .nav-item .nav-link {
+    padding: 0.7em 1em !important;
+    font-size: 100%;
+    font-weight: 500;
+  }
+  #collapsibleNavbar > ul,#collapsibleNavbar{
+    background: transparent;
+    text-align: center;
+  }  
+  #collapsibleNavbar > ul > li{
+    padding: 10px 0;
+  }
+  .results li {
+    padding: 20px 0;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .form-bg,.results {
+    padding-top: 120px;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .form-bg,.results {
+    padding-top: 120px;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .form-bg,.results{
+    padding-top: 120px;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .form-bg,.results {
+    padding-top: 120px;
+  }
+}
+
+.hidden {
+  display: none;
+}

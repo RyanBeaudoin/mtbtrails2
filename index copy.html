@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>MtbTrails</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" 
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script>
+    $(document).ready(function () {
+     $(".navbar").hide(); 
+     $(".submitBtn").click(function () 
+     { 
+        if ($('.results').is(':visible') || $(".results").css("display", "block")) 
+        {
+          $("body").css('background-image', 'none');
+          $(".form-bg").hide(); 
+          $(".navbar").show();
+        }
+      });   
+    });     
+  </script>
+</head>
+
+<body>
+<nav class="navbar navbar-expand-md navbar-dark fixed-top" id="banner">
+      <div class="container">
+
+        <a class="navbar-brand" href="#">
+          <span>MtbTrails</a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <!-- <input type="text" id="user-input" name="user-input" placeholder="Enter location" class="input text-center" required> -->
+            </li>
+            <li class="nav-item">
+              <!-- <input type="submit" value="Submit" id="submit" class="btn submitBtn text-center"> -->
+            </li>            
+          </ul>
+        </div>
+      </div>
+    </nav> 
+  <main role="main" class="container">
+    <form id="search-form initial" class="form-bg">
+      <h1 class="text-center">MtbTrails</h1>
+      <h3 class="text-center">Find Trails Near you!</h3>
+      <div class="row align-items-center">
+        <div class="col-md-6 offset-md-3 col-sm-12  text-center">
+          <label for="breed">Enter location: </label>
+          <input type="text" id="user-input" name="user-input" placeholder="Enter location" class="input text-center"
+            required>
+          <input type="submit" value="Submit" id="submit" class="btn submitBtn text-center">
+        </div>
+      </div>
+    </form>
+    
+    <section class="results hidden">
+      <ul id="results-list">
+      </ul>
+    </section>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
